@@ -1,0 +1,9 @@
+lxml
+six
+beautifulsoup4
+pandas
+requests
+kafka-python
+pyarrow
+minio
+
