@@ -2,10 +2,17 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 
-from functions.coinbase_fetch import coinbase_fetch
+from coinbase_fetch import coinbase_fetch
 from load_into_minio import load_into_minio
 
-import scripts.send_email as send_email
+from plugins import send_email
+
+# import sys
+# import os
+# sys.path.insert(0,os.path.abspath(os.path.dirname(__file__)))
+# from airflow.scripts import send_email
+
+#from airflow.scripts.send_email import send_email
 
 # Define default arguments
 default_args = {
