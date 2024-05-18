@@ -1,3 +1,4 @@
+FROM python:3.11-slim
 FROM apache/airflow:2.9.0
 ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
 ENV AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=my_conn_string

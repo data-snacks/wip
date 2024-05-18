@@ -3,7 +3,7 @@ six
 beautifulsoup4
 pandas
 requests
-kafka-python
+kafka-python-ng
 pyarrow
 minio
 
