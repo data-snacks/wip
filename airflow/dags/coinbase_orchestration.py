@@ -2,11 +2,10 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 
-from coinbase_fetch import coinbase_fetch
+from functions.coinbase_fetch import coinbase_fetch
 from load_into_minio import load_into_minio
 
-from ..scripts.send_email import send_email
-
+import scripts.send_email as send_email
 
 # Define default arguments
 default_args = {
@@ -30,12 +29,12 @@ task_2 = PythonOperator(
     dag=dag,
 )
 
-task_3 = PythonOperator(
-    task_id='send_email',
-    python_callable=send_email,
-    dag=dag,
-)
+# task_3 = PythonOperator(
+#     task_id='send_email',
+#     python_callable= send_email,
+#     dag=dag,
+# )
 
 
 # Set task dependencies
-task_1 >> task_2 >> task_3
+task_1 >> task_2 #>> task_3
