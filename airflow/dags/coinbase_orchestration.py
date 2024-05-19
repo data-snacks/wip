@@ -11,7 +11,8 @@ from load_into_minio import load_into_minio
 # from airflow.scripts import send_email
 
 #from airflow.scripts.send_email import send_email
-from scripts.send_email import send_email
+#from scripts.send_email import send_email
+#from scripts import send_email
 
 # Define default arguments
 default_args = {
