@@ -1,6 +1,7 @@
 version: "3"
 services:
   kafka:
+    container_name: kafka-cluster-standalone
     image: 'bitnami/kafka:latest'
     ports:
       - '9092:9092'
