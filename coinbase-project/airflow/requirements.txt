@@ -6,4 +6,3 @@ requests
 kafka-python-ng
 pyarrow
 minio
-
