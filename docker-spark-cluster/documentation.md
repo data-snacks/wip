@@ -1,5 +1,6 @@
 https://github.com/mvillarrealb/docker-spark-cluster/tree/master
 https://dev.to/mvillarrealb/creating-a-spark-standalone-cluster-with-docker-and-docker-compose-2021-update-6l4
+https://medium.com/@SaphE/testing-apache-spark-locally-docker-compose-and-kubernetes-deployment-94d35a54f222
 
 # How to obtain the id
 
